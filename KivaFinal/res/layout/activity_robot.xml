@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.sapience.kiva.kivafinal.RobotActivity" >
+
+    <TextView
+        android:id="@+id/usbConnectionStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/usb_not_connected" />
+
+    <TextView
+        android:id="@+id/wifiDirectConnectionStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/usbConnectionStatus"
+        android:text="@string/not_connected_to_client" />
+
+    <TextView
+        android:id="@+id/postionStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/wifiDirectConnectionStatus"
+        android:text="@string/position_not_set_" />
+
+    <TextView
+        android:id="@+id/tergetStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/postionStatus"
+        android:text="@string/target_not_set_" />
+    
+    <fragment 
+        android:layout_below="@id/tergetStatus"
+        class="com.sapience.kiva.kivafinal.DeviceListFragment"
+            android:id="@+id/frag_list"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+     />
+
+</RelativeLayout>

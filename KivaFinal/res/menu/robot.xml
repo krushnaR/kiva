@@ -1,0 +1,8 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.sapience.kiva.kivafinal.RobotActivity" >
+    <item android:id="@+id/on" android:title="On"></item>
+    <item android:id="@+id/find" android:title="Find"></item>
+    <item android:id="@+id/db" android:title="TestDB"></item>
+
+</menu>

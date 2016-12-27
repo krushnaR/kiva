@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.sapience.kiva.kivafinal.ClientActivity" >
+
+    <item
+        android:id="@+id/on"
+        android:title="On">
+    </item>
+    <item
+        android:id="@+id/find"
+        android:title="Find">
+    </item>
+    <item android:id="@+id/send" android:title="Send Target"></item>
+    <item android:id="@+id/talk" android:title="Talk"></item>
+
+</menu>
